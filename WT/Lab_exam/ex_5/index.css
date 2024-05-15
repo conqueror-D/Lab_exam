@@ -1,0 +1,20 @@
+#container {
+  background-color: green;
+  width: 300px;
+  height: 300px;
+  border: 3px solid red;
+}
+
+#container:hover {
+  border-radius: 50%;
+  background-color: red;
+  border: 3px solid green;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}

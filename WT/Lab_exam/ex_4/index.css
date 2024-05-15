@@ -1,0 +1,20 @@
+#circle {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  border: 2px solid black;
+  align-items: center;
+}
+
+#circle:hover {
+  background-color: yellow;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
