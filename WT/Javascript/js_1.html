@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- // Write a JavaScript function that reverse a number. // Sample Data and output:
+// Example x = 32243; // Expected Output: 34223
+Write a JavaScript function that accepts a string as a parameter and counts the 
+number of vowels within the string. -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="reverse()">
+    <script>
+      function reverse() {
+        function writeAlphabatically(input) {
+          var count = 0;
+          input.split("").forEach((ch) => {
+            if (
+              ch === "a" ||
+              ch === "e" ||
+              ch === "i" ||
+              ch === "o" ||
+              ch === "u"
+            )
+              count++;
+          });
+          document.write("There are ", count, " vowels in your sentence!");
+        }
+        var input = prompt("Enter a string: ");
+        writeAlphabatically(input);
+      }
+    </script>
+  </body>
+</html>

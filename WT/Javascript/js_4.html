@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Write a JavaScript program to calculate multiplication and division of two 
+numbers (input from user). -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label>Enter num1: </label>
+    <input id="num1" placeholder="69" />
+    <br />
+    <label>Enter num2: </label>
+    <input id="num2" placeholder="69" />
+    <br />
+    <button type="sumit" id="submit">submit</button>
+    <br />
+    <label id="output"></label>
+
+    <script>
+      var btn = document.getElementById("submit");
+      var op = document.getElementById("output");
+
+      btn.onclick = () => {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        var addition = num1 + num2;
+        var multiplication = num1 * num2;
+        op.innerHTML = `Addition of ${num1} and ${num2} is: ${addition} 
+        <br/> Multiplication of ${num1} and ${num2} is: ${multiplication}`;
+      };
+    </script>
+  </body>
+</html>
