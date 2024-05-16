@@ -1,9 +1,21 @@
 let output = document.getElementById('output-val');
 let btns = document.querySelectorAll('.btn');
 let submitBtn = document.getElementById('submitBtn');
+let dateContainer = document.getElementById('date');
 
 let operator = null;
 let isOperatorSelected = false;
+
+function printDate() {
+    let date = new Date();
+    let day = date.toLocaleDateString();
+    dateContainer.innerHTML = day + "<br>";
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    dateContainer.innerHTML += `${hours}:${minutes}:${seconds}`;
+}
+setInterval(printDate, 1000);
 
 btns.forEach((btn) => {
     btn.addEventListener('click', () => {
