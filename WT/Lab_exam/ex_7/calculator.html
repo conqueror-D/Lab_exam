@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Implement simple calculator operations.  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calci.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="output">
+        <span id="output-val"></span>
+      </div>
+      <div id="inputs">
+        <div style="margin-bottom: 10px">
+          <label>Enter n1</label>
+          <input placeholder="Enter number 1" id="num1" />
+        </div>
+        <div>
+          <button class="btn" id="plus">+</button>
+          <button class="btn" id="into">*</button>
+          <button class="btn" id="minus">-</button>
+          <button class="btn" id="div">/</button>
+        </div>
+        <div style="margin-top: 10px">
+          <label>Enter n2</label>
+          <input placeholder="Enter number 2" id="num2" />
+        </div>
+      </div>
+    </div>
+    <input
+      type="submit"
+      id="submitBtn"
+      onclick="handleSubmit()"
+      style="margin-top: 10px; margin-left: 650px"
+    />
+    <script src="calculator.js"></script>
+  </body>
+</html>

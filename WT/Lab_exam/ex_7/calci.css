@@ -1,0 +1,26 @@
+#inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#output {
+  width: 220px;
+  height: 50px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+}
