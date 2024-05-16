@@ -1,8 +1,17 @@
 #titleHeading {
   font-size: 40px;
   color: blue;
+  animation: blink 1s infinite alternate;
 }
 
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 #header {
   display: flex;
   justify-content: center;
