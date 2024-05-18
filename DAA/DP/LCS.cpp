@@ -37,20 +37,19 @@ string LCS(string &a, string &b)
     // as the whole n*m dp array will be needed to print the LCS
 
     memoize(a, b, i, j, dp);
-    for (int x = 0; x <= i; x++)
-    {
-        for (int y = 0; y < j + 1; y++)
-        {
-            cout << dp[x][y] << " ";
-        }
-        cout << endl;
-    }
+    // for (int x = 0; x <= i; x++)
+    // {
+    //     for (int y = 0; y < j + 1; y++)
+    //     {
+    //         cout << dp[x][y] << " ";
+    //     }
+    //     cout << endl;
+    // }
     string ans = "";
     int x = a.length() - 1, y = b.length() - 1;
-    cout << x << " " << y << endl;
     while (x >= 0 && y >= 0)
     {
-        cout << a[x] << b[y] << endl;
+
         if (a[x] == b[y])
         {
             ans += a[x];
@@ -75,8 +74,8 @@ string LCS(string &a, string &b)
 }
 int main()
 {
-    string a = "ABCBDAB";
-    string b = "BDCABA";
+    string a = "mhunuzqrkzsnidwbun";
+    string b = "szulspmhwpazoxijwbq";
 
     string ans = LCS(a, b);
     cout << "The longest common subsequence of the strings " << a << " and " << b << " is " << ans << endl;
