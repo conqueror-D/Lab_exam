@@ -16,6 +16,7 @@ using namespace std;
 
 int memoize(string &a, string &b, int i, int j, vector<vector<int>> &dp)
 {
+    // TC = O(N*M) + O(n*m) SC = O(n*m)
     if (i < 0 || j < 0)
         return 0;
 
