@@ -34,6 +34,7 @@ using namespace std;
 int MCM(vector<int> &matrices)
 {
     int m = matrices.size();
+    // Time = O(n^3) Space = O(n^2)
     vector<vector<int>> dp(m, vector<int>(m, -1));
     // int ans = find(matrices, i, j, dp);
     for (int i = 0; i < m; i++)

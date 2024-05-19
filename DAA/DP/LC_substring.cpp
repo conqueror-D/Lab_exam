@@ -11,6 +11,7 @@ using namespace std;
 
 void LC_substring(string &a, string &b)
 { // lil variation of typical dp
+    // TC = O(N*M) SC = O(n)
     int n = a.length();
     int m = b.length();
     vector<int> dp(n + 1);
