@@ -1,6 +1,6 @@
 // Graph coloring (also called vertex coloring) is a way of coloring a graph’s vertices such that
 // no two adjacent vertices share the same color. Implement a greedy algorithm for graph
-// coloring and minimize the total number of colors used.
+// coloring and minimize the total number of colors used (Chromatic number).
 
 #include <bits/stdc++.h>
 using namespace std;
